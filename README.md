@@ -35,7 +35,7 @@ Other browser/Node/NPM configurations might work but haven't been tested.
 
 - Fork, clone, and `npm install`.
 - Launch the project on a development server executing `npm run dev`.
-- Visit your app by navigating to `http://localhost:3000` with Chrome.
+- Visit your app by navigating to `http://:3000` with Chrome.
 
 ## Project Instructions
 
