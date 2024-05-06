@@ -36,7 +36,8 @@ export default class App extends React.Component {
   fetchAllTodos = () => {
     axios.get(URL)
     .then(res => {
-      this.setState({...this.state, todos: res.data.data})
+       this.setState({...this.state, todos: res.data.data})
+      console.log(res.data.data)
     })
     .catch(this.setAxiosResponseError)
   }
@@ -66,7 +67,7 @@ export default class App extends React.Component {
         <TodoList
           todos={this.state.todos}
           displayCompleteds={this.state.displayCompleteds}
-          togglCompleted={this.toggleCompleted}
+          toggleCompleted={this.toggleCompleted}
         />
           <Form
           onTodoFormSubmit={this.onTodoFormSubmit}
